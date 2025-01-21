@@ -7,10 +7,12 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Header -->
   <header class="header">
     <div class="container">
-      <img src="images/1logo.svg" alt="Branding UI Logo" class="logo">
-      <span>Branding UI</span>
+      <div class="logo">
+        <img src="logo.png" alt="Branding UI Logo">
+      </div>
       <nav class="nav">
         <a href="#">Products</a>
         <a href="#">Services</a>
@@ -25,105 +27,100 @@
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-content">
-        <h1>Beautiful analytics to grow smarter</h1>
-        <p>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
-        <div class="cta">
-            <img src="images/">
-          <a href="#" class="btn demo">Demo</a>
-          <a href="#" class="btn signup">Sign up</a>
-        </div>
-        <img src="images/computer.svg" alt="Dashboard Example" class="dashboard-image">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Beautiful analytics to grow smarter</h1>
+      <p>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
+      <div class="buttons">
+        <a href="#" class="btn demo">Demo</a>
+        <a href="#" class="btn signup">Sign up</a>
       </div>
-    </section>
-
-    <section class="features">
-      <div class="container">
-        <h2>Analytics that feels like it’s from the future</h2>
-        <p>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
-        <div class="features-grid">
-          <div class="feature">
-            <img src="images/1analytics.svg" alt="Team Inboxes">
-            <h3>Share team inboxes</h3>
-            <p>Keep everyone on the same page and in the loop.</p>
-          </div>
-          <div class="feature">
-            <img src="images/2analystic.svg" alt="Instant Answers">
-            <h3>Deliver instant answers</h3>
-            <p>Balance everything your customers need to be happy.</p>
-          </div>
-          <div class="feature">
-            <img src="images/3analystics.svg" alt="Team Reports">
-            <h3>Manage your team with reports</h3>
-            <p>Track, export, and understand data in a couple of clicks.</p>
-          </div>
-        </div>
+      <div class="images">
+        <img src="mobile-dashboard.png" alt="Mobile Dashboard" class="mobile-img">
+        <img src="desktop-dashboard.png" alt="Desktop Dashboard" class="desktop-img">
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="pricing">
-      <div class="container">
-        <h2>Pricing plans that scale</h2>
-        <div class="pricing-grid">
-          <div class="pricing-plan">
-            <img src="images/upgrade1.svg" alt="Basic Plan">
-            <h3>Basic plan</h3>
-            <p><strong>$10/mth</strong></p>
-            <p>Billed annually</p>
-            <ul>
-              <li>Basic reporting and analytics</li>
-              <li>Up to 10 individual users</li>
-              <li>20 GB individual data each user</li>
-              <li>Basic chat and email support</li>
-            </ul>
-            <a href="#" class="btn">Get started</a>
-          </div>
-          <div class="pricing-plan">
-            <img src="images/upgrade2.svg" alt="Business Plan">
-            <h3>Business plan</h3>
-            <p><strong>$20/mth</strong></p>
-            <p>Billed annually</p>
-            <ul>
-              <li>Advanced reporting</li>
-              <li>Up to 20 individual users</li>
-              <li>40 GB individual data each user</li>
-              <li>Priority chat and email support</li>
-            </ul>
-            <a href="#" class="btn">Get started</a>
-          </div>
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2>Analytics that feels like it’s from the future</h2>
+      <p>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
+      <div class="features-grid">
+        <div class="feature">
+          <img src="feature1.png" alt="Feature 1">
+          <h3>Share team inboxes</h3>
+          <p>Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page.</p>
+        </div>
+        <div class="feature">
+          <img src="feature2.png" alt="Feature 2">
+          <h3>Deliver instant answers</h3>
+          <p>An all-in-one customer service platform that helps you balance everything.</p>
+        </div>
+        <div class="feature">
+          <img src="feature3.png" alt="Feature 3">
+          <h3>Manage your team with reports</h3>
+          <p>Measure what matters with easy-to-use reports and export data in a couple of clicks.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="testimonial">
-      <div class="container">
-        <div>
-            <img src="images/Star icon.png" alt="">
-            <img src="images/womenpicture.svg" alt="Testimonial Image">
-
-          <p>Love the simplicity of the service and the prompt customer support. 
-            We can’t imagine working without it.</p>
-          <span>— Renee Wells,<strong> Product Designer</strong></span>
+  <!-- Pricing Section -->
+  <section class="pricing">
+    <div class="container">
+      <h2>Pricing plans that scale</h2>
+      <p>Simple, transparent pricing that grows with you. Try any plan free for 30 days.</p>
+      <div class="pricing-grid">
+        <div class="pricing-plan">
+          <h3>Basic plan</h3>
+          <p class="price">$10/mth</p>
+          <ul>
+            <li>Access to all basic features</li>
+            <li>Up to 10 individual users</li>
+            <li>20 GB individual data each user</li>
+          </ul>
+          <a href="#" class="btn">Get started</a>
         </div>
-        <img src="images/Pagination dot group.svg" alt="Renee Wells">
+        <div class="pricing-plan">
+          <h3>Business plan</h3>
+          <p class="price">$20/mth</p>
+          <ul>
+            <li>200+ integrations</li>
+            <li>Advanced reporting</li>
+            <li>40 GB individual data each user</li>
+          </ul>
+          <a href="#" class="btn">Get started</a>
+        </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
+  <!-- Testimonial Section -->
+  <section class="testimonial">
+    <div class="container">
+      <blockquote>
+        “Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.”
+      </blockquote>
+      <cite>— Renee Wells, Product Designer</cite>
+      <img src="testimonial-image.png" alt="Renee Wells">
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <img src="footer-logo.png" alt="Footer Logo" class="footer-logo">
-      <p>© 2077 Untitled UI</p>
+      <img src="footer-logo.png" alt="Branding UI Logo" class="footer-logo">
       <nav class="footer-nav">
         <a href="#">Overview</a>
         <a href="#">Features</a>
         <a href="#">Pricing</a>
         <a href="#">Careers</a>
         <a href="#">Help</a>
-        <a href="#">Privacy</a>
       </nav>
+      <p>&copy; 2077 Untitled UI</p>
     </div>
   </footer>
 </body>
