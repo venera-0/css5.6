@@ -71,14 +71,95 @@
     border: none;
     cursor: pointer;
   }
+
+
+  /* Hero Section */
+.mine {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    max-width: 100%;
+  }
   
-  .notification {
-    position: relative;
-    background-color: #e53935;
-    color: white;
-    font-size: 12px;
+  .feature-tag {
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #D5D7DA;
+    background: #FFF;
+    padding: 8px 12px 8px 8px;
+   
+  }
+ 
+  .new-feature {
+    display: flex;
     padding: 4px 8px;
-    border-radius: 50%;
-    margin-left: -10px;
+    align-items: center;
+    gap: 6px;
+    border-radius: var(--radius-sm, 6px);
+    border: 1px solid #D5D7DA;
+    background: #FFF;
+
+  }
+  
+
+
+
+  .dashboard-link {
+    color: #414651;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    text-decoration: none;
+
+  }
+ 
+  .main-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  .main-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .main-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .demo-button,
+  .signup-button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+  
+  .demo-button {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  .signup-button {
+    background-color: #6c63ff;
+    color: white;
+  }
+  
+  .demo-button:hover {
+    background-color: #f3f3f3;
+  }
+  
+  .signup-button:hover {
+    background-color: #5947cc;
   }
   
