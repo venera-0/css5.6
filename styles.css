@@ -1,11 +1,4 @@
 /* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  /* General Styles */
-  
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -27,26 +20,55 @@ body {
   /* Header */
   .header {
     display: flex;
-    justify-content: space-between;
+    width: 1440px;
+    padding: 22px 208px;
+    justify-content: center;
     align-items: center;
-    padding: 20px 0;
   }
   
+
+  .logo {
+    width: 40px;
+    height: 44px;
+
+  }
+
+
+
+  .logotext{
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 24px; /* 150% */
+  }
+
+
+
+
   .nav {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: var(--spacing-2xl, 20px);
   }
   
   .nav a {
-    text-decoration: none;
-    color: #333;
+    color: #535862;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+  
   }
   
   .auth a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xs, 4px);
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid #D5D7DA;
+    background: #FFF;
   }
   
   .auth .signup {
@@ -212,3 +234,4 @@ body {
     font-size: 0.9em;
   }
   
+
