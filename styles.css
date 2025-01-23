@@ -1,237 +1,84 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    line-height: 1.5;
   }
   
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+  body {
+    font-family: Arial, sans-serif;
   }
   
-  h1, h2, span, p {
-    margin: 0;
-  }
-  
-  /* Header */
   .header {
     display: flex;
-    width: 1440px;
-    padding: 22px 208px;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .logo {
+    display: flex;
     align-items: center;
   }
   
-
-  .logo {
-    width: 40px;
-    height: 44px;
-
+  .logo img {
+    height: 24px;
+    margin-right: 8px;
   }
-
-
-
-  .logotext{
-    color: #000;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 24px; /* 150% */
+  
+  .logo span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
   }
-
-
-
-
+  
   .nav {
     display: flex;
+    gap: 20px;
     align-items: center;
-    gap: var(--spacing-2xl, 20px);
   }
   
   .nav a {
-    color: #535862;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-  
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
   }
   
-  .auth a {
+  .nav a:hover {
+    color: #6c63ff;
+  }
+  
+  .auth-buttons {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: var(--spacing-xs, 4px);
-    border-radius: var(--radius-md, 8px);
-    border: 1px solid #D5D7DA;
-    background: #FFF;
+    gap: 10px;
   }
   
-  .auth .signup {
-    background-color: #6a4df6;
+  .auth-buttons .login {
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
   }
   
-  .auth .login {
-    background-color: transparent;
-    border: 1px solid #6a4df6;
-    color: #6a4df6;
+  .auth-buttons .signup {
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    cursor: pointer;
   }
   
-  /* Hero Section */
-  .hero {
-    text-align: center;
-    padding: 60px 0;
-  }
-  
-  .hero .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
-  }
-  
-  .hero .btn {
-    background-color: #6a4df6;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
-  
-  .hero .images {
-    margin-top: 40px;
-  }
-  
-  .hero .images img {
-    width: 100%;
-    max-width: 700px;
-  }
-  
-  /* Features Section */
-  .features {
-    text-align: center;
-    padding: 60px 0;
-  }
-  
-  .features-grid {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-top: 40px;
-  }
-  
-  .feature {
-    flex: 1;
-    text-align: center;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .feature img {
-    width: 50px;
-    margin-bottom: 20px;
-  }
-  
-  /* Pricing Section */
-  .pricing {
-    text-align: center;
-    padding: 60px 0;
-  }
-  
-  .pricing-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 40px;
-  }
-  
-  .pricing-plan {
-    flex: 1;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .pricing-plan .price {
-    font-size: 2em;
-    color: #6a4df6;
-    margin: 20px 0;
-  }
-  
-  .pricing-plan ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .pricing-plan ul li {
-    margin: 10px 0;
-  }
-  
-  .pricing-plan .btn {
-    display: inline-block;
-    margin-top: 20px;
-    background-color: #6a4df6;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
-  
-  /* Testimonial Section */
-  .testimonial {
-    text-align: center;
-    padding: 60px 0;
-    background-color: #6a4df6;
-    color: #fff;
-  }
-  
-  .testimonial blockquote {
-    font-size: 1.5em;
-    margin: 0;
-    line-height: 1.8;
-  }
-  
-  .testimonial img {
-    margin-top: 20px;
+  .notification {
+    position: relative;
+    background-color: #e53935;
+    color: white;
+    font-size: 12px;
+    padding: 4px 8px;
     border-radius: 50%;
-    width: 80px;
+    margin-left: -10px;
   }
   
-  /* Footer */
-  .footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .footer-logo {
-    width: 100px;
-    margin-bottom: 20px;
-  }
-  
-  .footer-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .footer-nav a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  .footer p {
-    margin-top: 20px;
-    font-size: 0.9em;
-  }
-  
-
