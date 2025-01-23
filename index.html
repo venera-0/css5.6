@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,28 +24,35 @@
       <button class="signup">Sign up</button>
     </div>
   </header>
+
+  <!-- mine Section -->
   <section class="mine">
     <div class="feature-tag">
       <span class="new-feature">New feature</span>
-      <a href="#" class="dashboard-link">Check out the team dashboard </a>
-      <img src="images/arrow-right.svg" alt="#">
+      <a href="#" class="dashboard-link">Check out the team dashboard</a>
+      <img src="images/arrow-right.svg" alt="Arrow pointing right">
     </div>
-    <h1 class="mine">Beautiful analytics to grow smarter</h1>
-    <p class="mine">Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
+    <h1 class="main-title">Beautiful analytics to grow smarter</h1>
+    <p class="main-description">Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
     <div class="mine-actions">
       <button class="demo-button">Demo</button>
       <button class="signup-button">Sign up</button>
     </div>
-</div>
-<div class="images">
-  <img src="images/computer.svg" alt="computer Dashboard" class="mobile-and-computer">
-</div>
+  </section>
 
- <!-- Features Section -->
- <section class="features">
+  <!-- Images Section -->
+  <div class="images">
+    <img src="images/computer.svg" alt="Computer dashboard" class="mobile-and-computer">
+  </div>
+
+<!-- Features Section -->
+<section class="features">
     <div class="container">
-      <span>Analytics that feels like it’s from the future</span>
+      <div class="feature-link">
+        <span>Features</span>
+      <h3>Analytics that feels like it’s from the future</h3>
       <p>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
+     </div>
       <div class="features-grid">
         <div class="feature">
           <img src="images/1analytics.svg" alt="Feature 1">
@@ -70,13 +76,14 @@
   <!-- Pricing Section -->
   <section class="pricing">
     <div class="container">
-        <div>
-            <span>Upgrade </span>
-        </div>
-      <h2>Pricing plans that scale</h2>
-      <p>Simple, transparent pricing that grows with you. Try any plan free for 30 days.</p>
+      <div class="Upgrade">
+          <span>Upgrade</span>
+          <h2>Pricing plans that scale</h2>
+          <p>Simple, transparent pricing that grows with you. Try any plan free for 30 days.</p>
+     </div>
       <div class="pricing-grid">
         <div class="pricing-plan">
+            <img src="images/upgrade1.svg" alt="price 1">
           <span>Basic plan</span>
           <p class="price">$10/mth</p>
           <ul>
@@ -84,9 +91,13 @@
             <li>Up to 10 individual users</li>
             <li>20 GB individual data each user</li>
           </ul>
-          <a href="#" class="btn">Get started</a>
+          <div class="btn-get">
+          <a href="#" class="btn" aria-label="Get started with the Basic Plan">Get started</a>
+          </div>
         </div>
+      
         <div class="pricing-plan">
+            <img src="images/upgrade2.svg" alt="Price 1">
           <span>Business plan</span>
           <p class="price">$20/mth</p>
           <ul>
@@ -94,37 +105,57 @@
             <li>Advanced reporting</li>
             <li>40 GB individual data each user</li>
           </ul>
-          <a href="#" class="btn">Get started</a>
+          <div class="btn-get">
+            <a href="#" class="btn" aria-label="Get started with the Basic Plan">Get started</a>
+            </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Testimonial Section -->
-  <section class="testimonial">
-    <div class="container">
-      <blockquote>
-        “Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.”
-      </blockquote>
-      <span>— Renee Wells, Product Designer</span>
-      <img src="testimonial-image.png" alt="Renee Wells">
+ <section class="testimonial-section">
+  <div class="testimonial-content">
+    <img src="images/Star icon.png" alt="star" class="star">
+    <img src="images/Star icon.png" alt="star" class="star">
+    <img src="images/Star icon.png" alt="star"class="star">
+    <img src="images/Star icon.png" alt="star"class="star">
+    <img src="images/Star icon.png" alt="star"class="star">
+    <p class="testimonial-text">
+      Love the simplicity of the service and the prompt customer support. 
+      We can’t imagine working without it.
+    </p>
+    <div class="author-info">
+      <strong>— Renee Wells</strong>
+      <br />
+      <span>Product Designer, Quotient</span>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <img src="footer-logo.png" alt="Branding UI Logo" class="footer-logo">
-      <nav class="footer-nav">
-        <a href="#">Overview</a>
-        <a href="#">Features</a>
-        <a href="#">Pricing</a>
-        <a href="#">Careers</a>
-        <a href="#">Help</a>
-      </nav>
-      <p>&copy; 2077 Untitled UI</p>
+    <div class="testimonial-dots">
+        <img src="images/ dot group.svg" alt="dots">
+    </div>
+  </div>
+  <div class="testimonial-image">
+    <img src="images/womenpicture.svg" alt="Renee Wells" />
+   
+</div>
+</section>
+<!--footer section-->
+<footer class="footer">
+    <div class="footer-left">
+      <img src="images/1logo.svg" alt="Branding Logo" class="footer-logo" />
+      <span class="footer-brand">Branding UI</span>
+    </div>
+    <nav class="footer-nav">
+      <a href="#">Overview</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Careers</a>
+      <a href="#">Help</a>
+      <a href="#">Privacy</a>
+    </nav>
+    <div class="footer-right">
+      <span>© 2077 Untitled UI</span>
     </div>
   </footer>
-</section>
 </body>
 </html>
